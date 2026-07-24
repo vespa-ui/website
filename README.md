@@ -108,7 +108,7 @@ description; `index.html` carries sitewide defaults (`Organization` / `WebSite` 
 `public/robots.txt` allows those crawlers explicitly (GEO — being retrievable and citable by AI
 answer engines) alongside standard search bots, and points to `sitemap.xml`.
 
-If you move off the default GitHub Pages project-site URL (`https://vespa-ui.github.io/vespa-ui/`),
+If you move off the default GitHub Pages org-site URL (`https://vespa-ui.github.io/`),
 update all of:
 
 - `SITE_ORIGIN` in [`src/components/Seo.tsx`](src/components/Seo.tsx)
@@ -120,14 +120,18 @@ update all of:
 
 ## Deployment
 
-`.github/workflows/deploy-website.yml` (repo root) builds this folder and publishes it to GitHub
-Pages on every push to `main` that touches `website/**`. It computes the Vite `base` path from the
-repository name automatically, which is correct for a project page
-(`https://<user>.github.io/<repo>/`).
+`.github/workflows/deploy-website.yml` builds this repo and publishes it to GitHub
+Pages on every push to `main`. The workflow reads the Pages base path from
+`configure-pages` so asset URLs always match where the site is served.
 
-If you're serving from a custom domain or a user/org page (`<user>.github.io`) instead:
+For the site to live at **`https://vespa-ui.github.io/`** (root `/`), the
+repository must be named **`vespa-ui.github.io`**. A project page named
+`website` is always served from `https://vespa-ui.github.io/website/` — that
+prefix comes from GitHub, not from the app code.
 
-- Set `VITE_BASE=/` (edit the workflow's `env:` block), and
-- Add a `CNAME` file with your domain under `website/public/` for a custom domain.
+If you're serving from a custom domain instead:
+
+- Set `VITE_BASE=/` (the workflow already does this for org pages), and
+- Add a `CNAME` file with your domain under `public/`.
 
 In the repository settings, set **Settings → Pages → Source** to **GitHub Actions**.

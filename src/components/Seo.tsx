@@ -18,7 +18,7 @@ export interface SeoProps {
 }
 
 function absoluteUrl(path: string): string {
-  const base = import.meta.env.BASE_URL; // e.g. "/vespa-ui/" in prod, "/" in dev
+  const base = import.meta.env.BASE_URL; // e.g. "/" in prod on org Pages, "/" in dev
   const cleanPath = path === '/' ? '' : path.replace(/^\//, '');
   return `${SITE_ORIGIN}${base}${cleanPath}`;
 }
