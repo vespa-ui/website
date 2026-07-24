@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages (MIT, https://github.com/rafgraph/spa-github-pages).
+      // Pairs with public/404.html: restores the deep-linked path that 404.html
+      // encoded into a query string, before React Router mounts.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vespa UI is a modern, self-hosted administration platform for Vespa — search, inspect, debug, and monitor your clusters from a single web interface."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://vespa-ui.github.io/vespa-ui/" />
+    <meta name="theme-color" content="#020202" />
+    <title>Vespa UI — Admin console for Vespa</title>
+
+    <!-- Open Graph / Twitter card defaults; overridden per route by src/components/Seo.tsx -->
+    <meta property="og:site_name" content="Vespa UI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vespa UI — Admin console for Vespa" />
+    <meta
+      property="og:description"
+      content="Vespa UI is a modern, self-hosted administration platform for Vespa — search, inspect, debug, and monitor your clusters from a single web interface."
+    />
+    <meta property="og:url" content="https://vespa-ui.github.io/vespa-ui/" />
+    <meta property="og:image" content="https://vespa-ui.github.io/vespa-ui/logo/logo.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Vespa UI — Admin console for Vespa" />
+    <meta
+      name="twitter:description"
+      content="Vespa UI is a modern, self-hosted administration platform for Vespa — search, inspect, debug, and monitor your clusters from a single web interface."
+    />
+    <meta name="twitter:image" content="https://vespa-ui.github.io/vespa-ui/logo/logo.svg" />
+
+    <link rel="alternate" type="text/plain" href="https://vespa-ui.github.io/vespa-ui/llms.txt" title="llms.txt" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://vespa-ui.github.io/vespa-ui/#organization",
+            "name": "Vespa UI",
+            "url": "https://vespa-ui.github.io/vespa-ui/",
+            "logo": "https://vespa-ui.github.io/vespa-ui/logo/logo.svg",
+            "sameAs": ["https://github.com/vespa-ui/vespa-ui"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://vespa-ui.github.io/vespa-ui/#website",
+            "url": "https://vespa-ui.github.io/vespa-ui/",
+            "name": "Vespa UI",
+            "publisher": { "@id": "https://vespa-ui.github.io/vespa-ui/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Vespa UI",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Linux, macOS, Windows (Docker)",
+            "url": "https://vespa-ui.github.io/vespa-ui/",
+            "description": "Self-hosted admin console for Vespa — search, inspect, debug, and monitor your clusters from a single web interface.",
+            "license": "https://github.com/vespa-ui/vespa-ui/blob/main/LICENSE",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="vespa.ui"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Help to maintain the solution free forever!"
+      data-color="#40DCA5"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+  </body>
+</html>

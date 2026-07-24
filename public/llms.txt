@@ -1,0 +1,21 @@
+# Vespa UI
+
+> Self-hosted admin console for Vespa — search, inspect, debug, and monitor Vespa clusters from a single web interface, with credentials kept server-side.
+
+Vespa UI is open source (Apache 2.0), built with NestJS, TypeORM, React, and Vite. It ships as a single Docker container with SQLite or PostgreSQL.
+
+## Docs
+
+- [Introduction](https://vespa-ui.github.io/vespa-ui/docs-raw/getting-started/introduction.md): What Vespa UI is, and who it's for.
+- [Installation](https://vespa-ui.github.io/vespa-ui/docs-raw/getting-started/installation.md): Run Vespa UI locally with pnpm, or in production with Docker.
+- [Configuration](https://vespa-ui.github.io/vespa-ui/docs-raw/getting-started/configuration.md): Environment variables used by the backend.
+- [Overview](https://vespa-ui.github.io/vespa-ui/docs-raw/architecture/overview.md): How the monorepo and the security model fit together.
+- [Tech Stack](https://vespa-ui.github.io/vespa-ui/docs-raw/architecture/tech-stack.md): Backend, frontend, and tooling choices.
+- [Writing Documentation](https://vespa-ui.github.io/vespa-ui/docs-raw/writing-docs.md): How this docs site turns committed Markdown files into pages.
+
+## Optional
+
+- [About](https://vespa-ui.github.io/vespa-ui/about): project background, design principles, monorepo layout
+- [Credits](https://vespa-ui.github.io/vespa-ui/credits): open-source dependencies and license
+- [Full documentation, one file](https://vespa-ui.github.io/vespa-ui/llms-full.txt): every doc page concatenated
+- [GitHub repository](https://github.com/vespa-ui/vespa-ui): source code, issues, releases

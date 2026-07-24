@@ -1,0 +1,86 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.vespaHero {
+  background: radial-gradient(circle at 15% 20%, rgba(97, 215, 144, 0.16), transparent 55%),
+    linear-gradient(180deg, #020202 0%, #0a120d 100%);
+  color: #f4fbf7;
+}
+
+.vespaHero--light {
+  background: radial-gradient(circle at 15% 20%, rgba(97, 215, 144, 0.14), transparent 55%),
+    linear-gradient(180deg, #061109 0%, #0f2417 100%);
+}
+
+.vespaCodeBlock {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* Markdown-rendered docs content */
+.vespaMarkdown h1,
+.vespaMarkdown h2,
+.vespaMarkdown h3,
+.vespaMarkdown h4 {
+  scroll-margin-top: 96px;
+}
+
+.vespaMarkdown h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(2, 2, 2, 0.08);
+}
+
+.vespaMarkdown pre {
+  padding: 12px 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.vespaMarkdown :not(pre) > code {
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.vespaMarkdown table {
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+.vespaMarkdown th,
+.vespaMarkdown td {
+  border: 1px solid rgba(2, 2, 2, 0.12);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.vespaMarkdown a {
+  text-decoration: underline;
+}
+
+.vespaMarkdown img {
+  max-width: 100%;
+}
+
+.vespaMarkdown blockquote {
+  margin: 1em 0;
+  padding: 0.2em 1em;
+  border-left: 3px solid #61d790;
+}
